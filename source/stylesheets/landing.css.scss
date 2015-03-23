@@ -79,13 +79,22 @@ html, body {
     margin-right: 15%;
 }
 
+#homeIcon {
+    position: fixed;
+    color: rgb(20,20,20);
+    margin: 2%;
+    margin-bottom: 0;
+    &:hover {
+        color: rgb(100,100,100);
+    }
+}
+
 #title {
     @extend .section;
     font-size: 26px;
 }
 
 #about {
-    padding-top: 2%;
     padding-bottom: 5%;
     @extend .section;
     font-size: 22px;
