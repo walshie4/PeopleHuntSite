@@ -1,0 +1,125 @@
+@mixin border-radius($radius) {
+    -webkit-border-radius: $radius;
+    -moz-border-radius: $radius;
+    -ms-border-radius: $radius;
+    border-radius: $radius;
+}
+
+@mixin transition($animations, $time) {
+    -webkit-transition: $animations $time ease-in-out;
+    -moz-transition: $animations $time ease-in-out;
+    -o-transition: $animations $time ease-in-out;
+    transition: $animations $time ease-in-out;
+}
+
+@mixin background-linear-gradient($deg, $color1, $color2) {
+    background: -webkit-linear-gradient($deg, $color1, $color2);
+    background:    -moz-linear-gradient($deg, $color1, $color2);
+    background:     -ms-linear-gradient($deg, $color1, $color2);
+    background:      -o-linear-gradient($deg, $color1, $color2);
+    background:         linear-gradient($deg, $color1, $color2);
+}
+
+@mixin background-size($arg) {
+    -webkit-background-size: $arg;
+    -moz-background-size: $arg;
+    -o-background-size: $arg;
+    background-size: $arg;
+}
+
+@mixin background-size-2d($arg1, $arg2) {
+    -webkit-background-size: $arg1, $arg2;
+    -moz-background-size: $arg1, $arg2;
+    -o-background-size: $arg1, $arg2;
+    background-size: $arg1, $arg2;
+}
+
+@mixin box-shadow($x, $y, $blur, $spread, $color) {
+    box-shadow: $x, $y, $blur, $spread, $color;
+    -moz-box-shadow: $x, $y, $blur, $spread, $color;
+    -webkit-box-shadow: $x, $y, $blur, $spread, $color;
+}
+
+@mixin rotate($arg) {
+    transform: rotate($arg);
+    -o-transform: rotate($arg);
+    -moz-transform: rotate($arg);
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    background-color: rgb(180,180,180);
+    color: rgb(20,20,20);
+}
+
+* {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    outline: none;
+}
+
+#signup {
+    margin-left: 15%;
+    margin-right: 15%;
+    width: 70%;
+}
+
+.center {
+    text-align: center;
+}
+
+.padded {
+    padding: 4%;
+}
+
+.section {
+    width: 70%;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+#title {
+    @extend .section;
+    font-size: 26px;
+}
+
+#about {
+    padding-top: 2%;
+    padding-bottom: 5%;
+    @extend .section;
+    font-size: 22px;
+}
+
+#mc_embed_signup {
+    background: rgba(0, 0, 0, 0);
+    color: #000;
+    text-align: center;
+    width: 70%;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+#mce-EMAIL {
+    text-align: center;
+    border: 1px;
+    padding-top: 6px;
+    padding-top: .47vw;
+    padding-bottom: 6px;
+    padding-bottom: .47vw;
+    width: 50%;
+    box-shadow: 0;
+    @include border-radius(4px);
+    color: rgb(40,40,40);
+    text-shadow: 0 0 0 #171717;
+}
+
+#mc-embedded-subscribe {
+    width: 20%;
+    @include transition(all, .6s);
+}
+
+a:link, a:visited {
+    @include transition(all, .6s);
+    text-decoration: none;
+}
