@@ -9,4 +9,5 @@ build:
 deploy: build
 	bundle exec middleman deploy
 update: pull push
-
+clean:
+	rm -rf build/

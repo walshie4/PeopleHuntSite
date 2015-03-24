@@ -46,84 +46,36 @@
     -moz-transform: rotate($arg);
 }
 
-#signup {
-    margin-left: 15%;
-    margin-right: 15%;
-    width: 70%;
+.center {
+    text-align: center;
 }
 
-.section {
-    width: 70%;
-    margin-left: 15%;
-    margin-right: 15%;
+.padded {
+    padding: 4%;
 }
 
-#homeIcon {
-    position: fixed;
-    color: rgb(20,20,20);
-    margin: 2%;
-    margin-bottom: 0;
-    &:hover {
-        color: rgb(100,100,100);
-    }
-}
-
-#title {
-    @extend .section;
-    font-size: 26px;
-}
-
-#about {
+html, body {
+    height: 100%;
     width: 100%;
-    font-size: 22px;
-    height: 30%;
+    background-color: rgb(230,230,230);
+    color: rgb(20,20,20);
 }
 
-#mc_embed_signup {
-    background: rgba(0, 0, 0, 0);
-    color: #000;
-    text-align: center;
-    width: 70%;
-    margin-left: 15%;
-    margin-right: 15%;
+* {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    outline: none;
 }
 
-#mce-EMAIL {
-    text-align: center;
-    border: 1px;
-    padding-top: 6px;
-    padding-top: .47vw;
-    padding-bottom: 6px;
-    padding-bottom: .47vw;
-    width: 50%;
-    box-shadow: 0;
-    @include border-radius(4px);
-    color: rgb(40,40,40);
-    text-shadow: 0 0 0 #171717;
+footer {
+    background: rgba(10,10,10,.7);
 }
 
-#mc-embedded-subscribe {
-    width: 20%;
+a:link, a:visited {
     @include transition(all, .6s);
-    margin-bottom: 15%;
-}
-
-#features {
-    @extend #about;
-    background-color: rgba(63,33,176,.5);
-    padding-top: 3%;
-    padding-bottom: 3%;
-}
-
-.featured {
-    float: left;
-    margin-left: 10%;
-    width: 20%;
-    i {
-        padding-top: 9%;
+    text-decoration: none;
+    color: rgb(140,140,140);
+    &:hover {
+        color: rgb(50,50,50);
     }
-}
-
-.featureTitle {
-    padding-top: 12%;
 }
