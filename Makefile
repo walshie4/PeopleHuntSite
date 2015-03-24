@@ -4,7 +4,7 @@ push:
 	git push origin master
 pull:
 	git pull origin master
-build:
+build: clean
 	bundle exec middleman build
 deploy: build
 	bundle exec middleman deploy
