@@ -68,13 +68,17 @@ html, body {
 }
 
 footer {
-    background: rgba(10,10,10,.7);
+    background: rgba(10,10,10,.6);
+}
+
+#projectInfo {
+    margin-left: 7%;
 }
 
 a:link, a:visited {
     @include transition(all, .6s);
     text-decoration: none;
-    color: rgb(140,140,140);
+    color: rgb(160,160,160);
     &:hover {
         color: rgb(50,50,50);
     }
