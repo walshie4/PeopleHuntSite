@@ -1,3 +1,5 @@
+@import 'base.css.scss';
+
 @mixin border-radius($radius) {
     -webkit-border-radius: $radius;
     -moz-border-radius: $radius;
@@ -47,15 +49,8 @@
 }
 
 #signup {
-    margin-left: 15%;
-    margin-right: 15%;
-    width: 70%;
-}
-
-.section {
-    width: 70%;
-    margin-left: 15%;
-    margin-right: 15%;
+    @extend .section;
+    height: fit;
 }
 
 #homeIcon {
@@ -75,10 +70,8 @@
 }
 
 #about {
+    @extend .section;
     padding-top: 2%;
-    width: 100%;
-    padding-left: 15%;
-    padding-right: 15%;
     font-size: 22px;
     height: 30%;
 }
@@ -105,6 +98,7 @@
     padding-bottom: .47vw;
     width: 50%;
     box-shadow: 0;
+    font-size: 18px;
     @include border-radius(4px);
     color: rgb(40,40,40);
     text-shadow: 0 0 0 #171717;
@@ -112,12 +106,16 @@
 
 #mc-embedded-subscribe {
     width: 20%;
+    font-size: 16px;
     @include transition(all, .6s);
     margin-bottom: 15%;
 }
 
 #features {
     @extend #about;
+    padding: 0;
+    margin: 0;
+    width: 100%;
     background-color: rgba(63,33,176,.5);
     padding-top: 3%;
     padding-bottom: 3%;

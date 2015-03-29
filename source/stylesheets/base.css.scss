@@ -54,11 +54,22 @@
     padding: 4%;
 }
 
+.section {
+    margin: 0;
+    padding: 0;
+    width: 70%;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
 html, body {
+    margin: 0;
+    padding: 0;
     height: 100%;
     width: 100%;
     background-color: rgb(230,230,230);
     color: rgb(20,20,20);
+    font-size: 20px;
 }
 
 * {
@@ -78,8 +89,8 @@ footer {
 a:link, a:visited {
     @include transition(all, .6s);
     text-decoration: none;
-    color: rgb(160,160,160);
+    color: rgb(100,100,100);
     &:hover {
-        color: rgb(50,50,50);
+        color: rgb(150,150,150);
     }
 }
